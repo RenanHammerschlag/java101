@@ -1,0 +1,40 @@
+//1. Crie um programa para ler a matrícula e o salário de dois empregados. Descontar
+//5% no salário do primeiro e acrescentar 9% no salário do segundo. Informar: o
+//valor do desconto do primeiro; o valor do acréscimo do segundo; o salário
+//final do primeiro; o salário final do segundo.
+
+package control;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class main_class {
+	
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("0.00");
+		
+		System.out.println("Matricula: ");
+		int matricula = sc.nextInt();
+		System.out.println("Salario: ");
+		double salario = sc.nextFloat();
+
+		
+		System.out.println("Matricula: ");
+		int matricula2 = sc.nextInt();
+		System.out.println("Salario: ");
+		int salario2 = sc.nextInt();
+		
+		double desconto = salario * 0.05;
+		double salarioAjuste = salario - desconto;
+		
+		System.out.println("Desconto: R$" + df.format(desconto));
+		System.out.println("funcionario: [" + matricula + "] salario: R$" + df.format(salarioAjuste));
+		
+		double acrescimo = salario * 0.09;
+		double salarioAjuste2 = salario2 + acrescimo;
+		
+		System.out.println("Acrescimo: R$" + df.format(acrescimo));
+		System.out.println("funcionario: [" + matricula2 + "] salario: R$" + df.format(salarioAjuste2));
+		sc.close();
+	}	
+}
