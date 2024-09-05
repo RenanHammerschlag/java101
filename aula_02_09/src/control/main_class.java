@@ -4,8 +4,8 @@
 //final do primeiro; o salário final do segundo.
 
 package control;
-import java.util.Scanner;
-import java.text.DecimalFormat;
+// import java.util.Scanner;
+// import java.text.DecimalFormat;
 
 public class main_class {
 	
@@ -132,29 +132,29 @@ public class main_class {
 //	Calcular e informar: a quantidade de pontos ganhos e a quantidade de pontos
 //	perdidos.
 	
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	// public static void main(String[] args) {
+	// 	Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Nome da equipe: ");
-		String equipe = new String();
-		equipe = sc.next();
+	// 	System.out.print("Nome da equipe: ");
+	// 	String equipe = new String();
+	// 	equipe = sc.next();
 		
-		System.out.print("Derrotas: ");
-		int derrotas = sc.nextInt();
+	// 	System.out.print("Derrotas: ");
+	// 	int derrotas = sc.nextInt();
 		
-		System.out.print("Empates: ");
-		int empates = sc.nextInt();
+	// 	System.out.print("Empates: ");
+	// 	int empates = sc.nextInt();
 		
-		System.out.println("Vitorias: ");
-		int vitorias = sc.nextInt();
+	// 	System.out.println("Vitorias: ");
+	// 	int vitorias = sc.nextInt();
 		
-		int pts_Ganhos = (vitorias * 3)+ empates;
-		int pts_Perdidos = derrotas*2;
+	// 	int pts_Ganhos = (vitorias * 3)+ empates;
+	// 	int pts_Perdidos = derrotas*2;
 		
-		System.out.println("Equipe: " +equipe);
-		System.out.println("Pontos ganhos: " +pts_Ganhos);
-		System.out.println("Pontos perdidos: " + pts_Perdidos);
+	// 	System.out.println("Equipe: " +equipe);
+	// 	System.out.println("Pontos ganhos: " +pts_Ganhos);
+	// 	System.out.println("Pontos perdidos: " + pts_Perdidos);
 		
-		sc.close();
-	}
+	// 	sc.close();
+	// }
 }
