@@ -1,0 +1,41 @@
+//	3. Faça um programa para solicitar o código, a quantidade de alunos do sexo
+//	masculino, a quantidade de alunos do sexo feminino e a quantidade de alunos
+//	aprovados de uma determinada turma.
+//	Calcular e informar: a porcentagem de alunos do sexo masculino; a porcentagem
+//	de alunos do sexo feminino; a porcentagem de alunos reprovados; o total de
+//	alunos da turma.
+
+package control;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class main_class {
+  public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Codigo da turma: ");
+		int cod_Turma = sc.nextInt();
+		
+		System.out.print("N° alunos M: ");
+		int alunos_M = sc.nextInt();
+		
+		System.out.print("N° alunos F: ");
+		int alunos_F = sc.nextInt();
+		
+		System.out.print("N° alunos aprovados: ");
+		int alunos_Aprovados = sc.nextInt();
+
+		int alunos_Total = alunos_M + alunos_F;
+		int alunos_Reprovados = alunos_Total - alunos_Aprovados;
+		int percentual_Reprovados= (alunos_Reprovados*100) / alunos_Total; 
+		int percentual_M = (alunos_M*100) / alunos_Total;
+		int percentual_F = (alunos_F*100) / alunos_Total;
+		
+		System.out.println("Turma: "+ cod_Turma);
+		System.out.println("alunos reprovados: " +percentual_Reprovados +"%");
+		System.out.println("alunos masculinos: " +percentual_M +"%");
+		System.out.println("alunos femininos: " +percentual_F +"%");
+		System.out.println("alunos na turma: " +alunos_Total);
+		sc.close();
+	}
+}
