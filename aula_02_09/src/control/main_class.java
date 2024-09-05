@@ -90,4 +90,71 @@ public class main_class {
 //		System.out.println("alunos na turma: " +alunos_Total);
 //		sc.close();
 //	}
+	
+//	4. O camelô Zé da banca vende diariamente, games, calculadoras e canetas. Faça
+//	um programa para solicitar o total de games, o total de calculadoras e o
+//	total de canetas vendidas ao término do dia. O programa deve solicitar também
+//	o preço de cada um dos produtos e ao final calcular e informar o total do
+//	faturamento com cada produto e o faturamento total.
+	
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.print("Total de games: ");
+//		int games = sc.nextInt();
+//		System.out.println("Preço: ");
+//		double preco_Games = sc.nextDouble();
+//		double faturamento_Games = games * preco_Games;
+//		
+//		System.out.print("Total de calculadoras: ");
+//		int calculadora = sc.nextInt();
+//		System.out.println("Preço: ");
+//		double preco_Calculadora = sc.nextDouble();
+//		double faturamento_Calculadora = calculadora * preco_Calculadora;
+//		
+//		System.out.print("Total de canetas: ");
+//		int canetas = sc.nextInt();
+//		System.out.println("Preço: ");
+//		double preco_Canetas =  sc.nextDouble();
+//		double faturamento_Caneta = canetas * preco_Canetas;
+//		
+//		double faturamento_Total = faturamento_Games + faturamento_Calculadora + faturamento_Caneta;
+//		
+//		System.out.println("Faturamento com games: " +faturamento_Games);
+//		System.out.println("Faturamento com calculadoras: " +faturamento_Calculadora);
+//		System.out.println("Faturmaneto com canetas: " +faturamento_Caneta);
+//		System.out.println("Faturamento total: " + faturamento_Total);
+//		sc.close();
+//	}
+	
+//	5. Elabore um programa para solicitar o nome de uma equipe de futebol, a
+//	quantidade de derrotas, empates e vitórias obtidas por ela no campeonato.
+//	Calcular e informar: a quantidade de pontos ganhos e a quantidade de pontos
+//	perdidos.
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Nome da equipe: ");
+		String equipe = new String();
+		equipe = sc.next();
+		
+		System.out.print("Derrotas: ");
+		int derrotas = sc.nextInt();
+		
+		System.out.print("Empates: ");
+		int empates = sc.nextInt();
+		
+		System.out.println("Vitorias: ");
+		int vitorias = sc.nextInt();
+		
+		int pts_Ganhos = (vitorias * 3)+ empates;
+		int pts_Perdidos = derrotas*2;
+		
+		System.out.println("Equipe: " +equipe);
+		System.out.println("Pontos ganhos: " +pts_Ganhos);
+		System.out.println("Pontos perdidos: " + pts_Perdidos);
+		
+		sc.close();
+	}
 }
